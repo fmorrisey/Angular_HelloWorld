@@ -15,6 +15,9 @@ import { CoursesService } from './courses.service';
     <div (click)="onDivClicked()">
       <button (click)="onSave($event)">Save</button>
     </div>
+    <div>
+      <input type="text" [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
+    </div>
   `,
 })
 export class CoursesComponent {
@@ -22,6 +25,11 @@ export class CoursesComponent {
   title = 'List of courses';
   imageUrl = 'http://lorempixel.com/400/200';
   courses;
+  email = 'test';
+
+  onKeyUp() {
+    console.log(this.email);
+  }
 
   onDivClicked() {
     window.alert('Div was Clicked');
