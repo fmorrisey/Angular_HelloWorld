@@ -5,11 +5,18 @@ import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { CoursesService } from './course/courses.service';
 import { CoursesComponent } from './courses.component';
+import { AuthorComponent } from './author/author.component';
+import { AuthorService } from './author/author.service';
 
 @NgModule({
-  declarations: [AppComponent, CoursesComponent, CourseComponent],
+  declarations: [
+    AppComponent,
+    CoursesComponent,
+    CourseComponent,
+    AuthorComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [CoursesService], // Dependency Injection
+  providers: [CoursesService, AuthorService], // Dependency Injection
   bootstrap: [AppComponent],
 })
 export class AppModule {}
