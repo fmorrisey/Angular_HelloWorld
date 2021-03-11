@@ -12,6 +12,7 @@ import { AuthorService } from './author/author.service';
 import { SummaryPipe } from './summary.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { PostComponent } from './post/post.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { PostComponent } from './post/post.component';
     SummaryPipe,
     FavoriteComponent,
     PostComponent,
+    PanelComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [CoursesService, AuthorService], // Dependency Injection
