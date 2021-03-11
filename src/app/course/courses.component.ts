@@ -4,12 +4,14 @@ import { CoursesService } from './courses.service';
   selector: 'courses',
   template: `
     <h2>{{ getTitle() }}</h2>
-    <ul>
-      <li *ngFor="let course of courses">
-        {{ course }}<br />
-        <img src="{{ imageUrl }}" />
-      </li>
-    </ul>
+    <div class="col-12">
+      <div class="col-md-4" *ngFor="let course of courses">
+        <span>
+          {{ course }}<br />
+          <!-- <img src="{{ imageUrl }}" /> -->
+        </span>
+      </div>
+    </div>
     <button [style.backgroundColor]="isActive ? 'blue' : 'white'">Save</button>
     <button class="btn btn-primary" [class.active]="isActive">Save</button>
     <div (click)="onDivClicked()">

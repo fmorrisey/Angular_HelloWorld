@@ -7,6 +7,11 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <div>
+  <post></post>
+  <favorite
+    [isFavorite]="post.isFavorite"
+    (change)="onFavoriteChanged()"
+  ></favorite>
   <courses></courses>
   <author></author>
 </div>

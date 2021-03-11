@@ -10,6 +10,8 @@ import { CoursesComponent } from './course/courses.component';
 import { AuthorComponent } from './author/author.component';
 import { AuthorService } from './author/author.service';
 import { SummaryPipe } from './summary.pipe';
+import { FavoriteComponent } from './favorite/favorite.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { SummaryPipe } from './summary.pipe';
     CourseComponent,
     AuthorComponent,
     SummaryPipe,
+    FavoriteComponent,
+    PostComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [CoursesService, AuthorService], // Dependency Injection
