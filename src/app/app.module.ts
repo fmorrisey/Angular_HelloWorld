@@ -11,7 +11,6 @@ import { AuthorComponent } from './author/author.component';
 import { AuthorService } from './author/author.service';
 import { SummaryPipe } from './summary.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
-import { PostComponent } from './post/post.component';
 import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
@@ -22,7 +21,6 @@ import { PanelComponent } from './panel/panel.component';
     AuthorComponent,
     SummaryPipe,
     FavoriteComponent,
-    PostComponent,
     PanelComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],

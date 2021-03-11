@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-panel',
+  selector: 'bootstrap-panel',
   templateUrl: './panel.component.html',
   styleUrls: ['./panel.component.css'],
 })

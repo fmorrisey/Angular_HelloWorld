@@ -7,7 +7,13 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <div>
-  <post></post>
+  <bootstrap-panel>
+    <div class="heading">Heading</div>
+    <div class="body">
+      <h2>Body</h2>
+      <p>Nulla aliquip velit amet officia...</p>
+    </div>
+  </bootstrap-panel>
   <favorite
     [isFavorite]="post.isFavorite"
     (change)="onFavoriteChanged($event)"
