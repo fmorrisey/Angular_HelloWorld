@@ -10,7 +10,7 @@
   <post></post>
   <favorite
     [isFavorite]="post.isFavorite"
-    (change)="onFavoriteChanged()"
+    (change)="onFavoriteChanged($event)"
   ></favorite>
   <courses></courses>
   <author></author>

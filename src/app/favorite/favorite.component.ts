@@ -1,13 +1,20 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  ViewEncapsulation,
+} from '@angular/core';
 
 @Component({
   selector: 'favorite',
   templateUrl: './favorite.component.html',
   styleUrls: ['./favorite.component.css'],
+  encapsulation: ViewEncapsulation.Emulated,
 })
 export class FavoriteComponent {
   @Input('isFavorite') public isFavorite: boolean;
-  @Output() change = new EventEmitter();
+  @Output('change') click = new EventEmitter();
 
   constructor() {
     this.isFavorite = false;
@@ -15,6 +22,9 @@ export class FavoriteComponent {
 
   clickStar() {
     this.isFavorite = !this.isFavorite;
-    this.change.emit();
+    this.click.emit({ newValue: this.isFavorite });
   }
+}
+export interface FavoriteChangedEventArgs {
+  eventState: boolean;
 }
