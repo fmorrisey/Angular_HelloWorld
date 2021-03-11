@@ -18,6 +18,7 @@ import { CoursesService } from './courses.service';
     <div>
       <input type="text" [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
     </div>
+    <div>here: {{ text | summary: 100 }}</div>
   `,
 })
 export class CoursesComponent {
@@ -26,6 +27,9 @@ export class CoursesComponent {
   imageUrl = 'http://lorempixel.com/400/200';
   courses;
   email = 'test';
+
+  public text: string =
+    'Voluptate dolore quis quis velit do. Velit sunt amet aute sunt ad. Ea non mollit cillum sint minim dolor. Mollit non consectetur esse excepteur ipsum consectetur voluptate eu mollit quis. Voluptate dolore quis quis velit do. Velit sunt amet aute sunt ad. Ea non mollit cillum sint minim dolor. Mollit non consectetur esse excepteur ipsum consectetur voluptate eu mollit quis. Voluptate dolore quis quis velit do. Velit sunt amet aute sunt ad. Ea non mollit cillum sint minim dolor. Mollit non consectetur esse excepteur ipsum consectetur voluptate eu mollit quis. Voluptate dolore quis quis velit do. Velit sunt amet aute sunt ad. Ea non mollit cillum sint minim dolor. Mollit non consectetur esse excepteur ipsum consectetur voluptate eu mollit quis. Voluptate dolore quis quis velit do. Velit sunt amet aute sunt ad. Ea non mollit cillum sint minim dolor. Mollit non consectetur esse excepteur ipsum consectetur voluptate eu mollit quis. Voluptate dolore quis quis velit do. Velit sunt amet aute sunt ad. Ea non mollit cillum sint minim dolor. Mollit non consectetur esse excepteur ipsum consectetur voluptate eu mollit quis.';
 
   onKeyUp() {
     console.log(this.email);

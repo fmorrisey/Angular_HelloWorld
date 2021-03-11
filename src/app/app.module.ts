@@ -9,6 +9,7 @@ import { CoursesService } from './course/courses.service';
 import { CoursesComponent } from './course/courses.component';
 import { AuthorComponent } from './author/author.component';
 import { AuthorService } from './author/author.service';
+import { SummaryPipe } from './summary.pipe';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AuthorService } from './author/author.service';
     CoursesComponent,
     CourseComponent,
     AuthorComponent,
+    SummaryPipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [CoursesService, AuthorService], // Dependency Injection
