@@ -7,6 +7,14 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <div>
+  <course></course>
+  <hr />
+  <courses></courses>
+  <hr />
+  <ngdirective></ngdirective>
+  <hr />
+  <like></like>
+  <hr />
   <bootstrap-panel>
     <div class="heading">Heading</div>
     <div class="body">
@@ -14,11 +22,12 @@
       <p>Nulla aliquip velit amet officia...</p>
     </div>
   </bootstrap-panel>
+  <hr />
   <favorite
     [isFavorite]="post.isFavorite"
     (change)="onFavoriteChanged($event)"
   ></favorite>
-  <courses></courses>
+  <hr />
   <author></author>
 </div>
 

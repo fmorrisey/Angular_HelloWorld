@@ -1,0 +1,12 @@
+.bi {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.highlighted {
+  color: deeppink;
+}
+
+.likeCount {
+  margin-top: -24px;
+}

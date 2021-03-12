@@ -3,6 +3,7 @@ import { CoursesService } from './courses.service';
 @Component({
   selector: 'courses',
   template: `
+    <h4>Courses Component</h4>
     <h2>{{ getTitle() }}</h2>
     <div class="col-12">
       <div class="col-md-4" *ngFor="let course of courses">
@@ -12,11 +13,13 @@ import { CoursesService } from './courses.service';
         </span>
       </div>
     </div>
+    <h4>Bindings</h4>
     <button [style.backgroundColor]="isActive ? 'blue' : 'white'">Save</button>
     <button class="btn btn-primary" [class.active]="isActive">Save</button>
     <div (click)="onDivClicked()">
       <button (click)="onSave($event)">Save</button>
     </div>
+    <h4>Custom Pipe</h4>
     <div>
       <input type="text" [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
     </div>

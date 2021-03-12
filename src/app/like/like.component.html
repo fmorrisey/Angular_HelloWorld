@@ -1,0 +1,14 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+/>
+
+<i
+  class="bi"
+  style="font-size: 42px"
+  [class.bi-heart-fill]="isActive"
+  [class.bi-heart]="!isActive"
+  [class.highlighted]="isActive"
+  (click)="clickHeart()"
+></i>
+<span class="likeCount">{{ likesCount }}</span>

@@ -12,6 +12,8 @@ import { AuthorService } from './author/author.service';
 import { SummaryPipe } from './summary.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { PanelComponent } from './panel/panel.component';
+import { LikeComponent } from './like/like.component';
+import { NgdirectiveComponent } from './ngdirective/ngdirective.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { PanelComponent } from './panel/panel.component';
     SummaryPipe,
     FavoriteComponent,
     PanelComponent,
+    LikeComponent,
+    NgdirectiveComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [CoursesService, AuthorService], // Dependency Injection
